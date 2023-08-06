@@ -1,0 +1,290 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    background-color: white;
+    /*se agrega para fixed*/
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+body {
+    font-family: 'Noto Sans Vithkuqi', sans-serif;
+    font-size: 16;
+    font-weight: bold;
+}
+
+.icon-size-pinterest {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-size-notifications {
+    width: 22px;
+    height: 26px;
+}
+
+.icon-size-message {
+    width: 54px;
+    height: 54px;
+}
+
+.nav-bar-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: auto;
+    padding: 0px 25px;
+}
+
+.nav-bar-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    padding: 20px;
+}
+
+.media-query {
+    display: flex;
+    flex-direction: row;
+}
+
+.a-decoration {
+    text-decoration: none;
+    color: white;
+}
+
+.icon-effect:hover {
+    background-color: rgb(198, 194, 194);
+    border-radius: 50%;
+}
+
+.nav-bar-start:active {
+    background-color: black;
+    border-radius: 5em / 5em;
+    color: white;
+}
+
+.nav-bar-explorer:active {
+    background-color: black;
+    border-radius: 5em / 5em;
+    color: white;
+}
+
+.pinterest-menu {
+    background: transparent;
+    border: none;
+    width: 60px;
+    outline: none;
+}
+
+.select {
+    display: flex;
+}
+
+.finder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0px 10px;
+    background-color: rgb(195, 193, 193);
+    border-radius: 5em / 5em;
+    margin-right: 20px;
+}
+
+.loupe {
+    height: 20px;
+}
+
+.search-bar {
+    border-radius: 5em / 5em;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    outline: none;
+    background: none;
+}
+
+.finder:hover {
+    background-color: rgb(168, 165, 165);
+}
+
+.pinterest-menu-card {
+    background: transparent;
+    border: none;
+    width: 20px;
+    outline: none;
+}
+
+.dropdown-menu-pinterest {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+/* End NAV */
+/* Start Main*/
+
+main {
+    padding-top: 60px;
+    /*agregado para fixed*/
+}
+
+#content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    padding: 0px 20px;
+}
+
+.card-image {
+    position: relative;
+    margin: 10px;
+}
+
+.button {
+    display: none;
+}
+
+.circle {
+    display: none;
+    height: 40px;
+    width: 40px;
+}
+
+.share {
+    display: none;
+    height: 35px;
+    width: 35px;
+}
+
+.save-button-big {
+    position: absolute;
+    padding-top: 5%;
+    padding-left: 45%;
+}
+
+.save-button-small {
+    position: absolute;
+    padding-top: 5%;
+    padding-left: 45%;
+}
+
+.circle-item-big {
+    position: absolute;
+    padding-top: 20rem;
+    padding-left: 9.5rem;
+}
+
+.circle-item-small {
+    position: absolute;
+    padding-top: 8rem;
+    padding-left: 10rem;
+}
+
+.share-item-big {
+    position: absolute;
+    padding-top: 20.2rem;
+    padding-left: 7rem;
+}
+
+.share-item-small {
+    position: absolute;
+    padding-top: 8.2rem;
+    padding-left: 7.5rem;
+}
+
+.button-style {
+    background-color: red;
+    height: 50px;
+    width: 100px;
+    border-radius: 50em;
+    color: white;
+    border: none;
+}
+
+.img-style {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    z-index: 2;
+    max-width: ;
+}
+
+#content .tall {
+    grid-row: span 2;
+}
+
+
+.card-image:hover {
+    .button {
+        display: inline-block;
+    }
+
+    .circle {
+        display: inline-block;
+    }
+
+    .share {
+        display: inline-block;
+    }
+
+    filter:brightness(0.9)
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        .save-button-big {
+            position: absolute;
+            padding-top: 5%;
+            padding-left: 50%;
+        }
+
+        .save-button-small {
+            position: absolute;
+            padding-top: 5%;
+            padding-left: 50%;
+        }
+
+        .circle-item-big {
+            position: absolute;
+            padding-top: 20rem;
+            padding-left: 9.5rem;
+        }
+
+        .circle-item-small {
+            position: absolute;
+            padding-top: 8rem;
+            padding-left: 10rem;
+        }
+
+        .share-item-big {
+            position: absolute;
+            padding-top: 20.2rem;
+            padding-left: 7rem;
+        }
+
+        .share-item-small {
+            position: absolute;
+            padding-top: 8.2rem;
+            padding-left: 7.5rem;
+        }
+
+    }
+}
